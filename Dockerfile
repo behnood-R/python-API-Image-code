@@ -17,4 +17,6 @@ ADD app /app
 ADD create_gunicorn_conf.py /
 ADD main.py /
 
-RUN python3 main.py
+RUN python3 create_gunicorn_conf.py --bind 0.0.0.0:${private_port}
+
+CMD ["gunicorn", "-c", "gunicorn.conf.py", "main:app"]
