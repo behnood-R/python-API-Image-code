@@ -12,11 +12,15 @@ The application is containerized, and the image is available on DockerHub.
 Nginx is installed on top of Gunicorn to act as a load balancer and reverse proxy. 
 The API responds in JSON format, and the scripts and Dockerfile are available on GitHub.
 
+https://github.com/behnood-R/python-API-Image-code.git
+
+
 For the network structure, a VPC, a public and a private subnet, an internet gateway, a NAT gateway, an elastic IP, and route tables for public and private subnets are included. 
 A security group is used to open traffic on specific ports and all traffic from inside to the internet. 
 
 The whole implementation stages have been automated in Terraform, and all related scripts are available on GitHub.
 
+https://github.com/behnood-R/image-upload-deployment-terraform-nginx.git
 
 As a potential improvement plan, Kubernetes can be used for the production stage, including the EC2 cluster behind a load balancer and passing the traffic to the load balancer via Route53. 
 This way, SSL can be implemented to secure the API. Additionally, an API gateway may help with higher loads. Nginx logs can be shipped into ELK for further investigation.
