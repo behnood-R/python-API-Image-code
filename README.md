@@ -28,3 +28,7 @@ This way, SSL can be implemented to secure the API. Additionally, an API gateway
 To run the Terraform script, the User should create and download a Key, and the path to the Key should be updated on lines 4 and 5 in the script. 
 The User has to create related AIM users and credentials beforehand. As all free tire services are used, it may take up to 3 minutes for the API to be ready to accept calls.
 
+Example of the response in Postman application has been included in Github :
+
+https://github.com/behnood-R/python-API-Image-code/blob/main/Screenshot%202023-03-29%20at%2010.18.38.png
+
