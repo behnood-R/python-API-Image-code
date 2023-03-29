@@ -23,6 +23,7 @@ The whole implementation stages have been automated in Terraform, and all relate
 https://github.com/behnood-R/image-upload-deployment-terraform-nginx.git
 
 As a potential improvement plan, Kubernetes can be used for the production stage, including the EC2 cluster behind a load balancer and passing the traffic to the load balancer via Route53. 
+As The second improvement plan, in case of preferance with handlling the project in serverless setuation, the deployment can be redesigned with Fargate or EKS to be more easier in handlling the application availablity and performance with less managemnet overhead, the cost should be reconsider for this case.
 This way, SSL can be implemented to secure the API. Additionally, an API gateway may help with higher loads. Nginx logs can be shipped into ELK for further investigation.
 
 To run the Terraform script, the User should create and download a Key, and the path to the Key should be updated on lines 4 and 5 in the script. 
